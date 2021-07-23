@@ -15,17 +15,21 @@
         <div class='container'>
             <form action="">
                 <h2 class="form-header">Contact form</h2>
+
+                <!-- email input -->
                 <div class="form-email">
                     <label for="email">E-Mail: </label>
                     <input type="email" id="email" placeholder="name@email.com" required> <br>
                 </div>
 
+                <!-- password input -->
                 <div class="form-password">
                     <label for="password">Password: </label>
                     <input type="password" id="password" minlength="8" placeholder="password" required>
                 </div>
 
-                <fieldset id="animal-set">
+                <!-- Animal selector (radio)-->
+                <fieldset id="form-color">
                     <legend>Choose your favourite Colour</legend>
                     <label for="blue">Blue</label>
                     <input type="radio" id="blue" name="colors">
@@ -39,7 +43,8 @@
                     <input type="radio" id="brown" name="colors">
                 </fieldset>
 
-                <fieldset id="color-set">
+                <!-- Color selector (checkbox) -->
+                <fieldset id="form-animal">
                     <legend>Choose your favourite Animals</legend>
                     <label for="bear">Bear</label>
                     <input type="checkbox" name="animals" id="bear">
@@ -50,14 +55,18 @@
                     <label for="donkey">Donkey</label>
                     <input type="checkbox" name="animals" id="donkey">
                 </fieldset>
-                <div class="tiger-textbox-container">
-                    <label for="tiger-textbox"></label>
-                    <input type="text" name="animals" id="tiger-textbox" placeholder="What is your favourite Tiger?">
-                </div>
+
+                <!-- Text box to appear only when Tiger Checkbox is selected -->
+                <label for="tiger-textbox"></label>
+                <input type="text" name="animals" id="tiger-textbox" placeholder="What is your favourite Tiger?">
+                
+                <!-- submit button -->
                 <input type="submit" id="form-submit">
             </form>
         </div>
     </main>
+    
+    <!-- Javascript links -->
     <script src="script.js"></script>
 </body>
 </html>
